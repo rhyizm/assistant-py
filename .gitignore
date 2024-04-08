@@ -1,5 +1,4 @@
 # Python
-
 __pycache__/
 *.py[cod]
 *.pyd
@@ -11,15 +10,16 @@ dist/
 build/
 
 # Environment
-
 .venv/
 env/
 
 # IDE
-
 .vscode/
 .idea/
 
-# Others
+# Thread
+./assistant_remember_thread_id.bat
+./assistant_remember_thread_id.zsh
 
+# Others
 .DS_Store

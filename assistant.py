@@ -337,15 +337,20 @@ def main():
     parser = argparse.ArgumentParser(description="Process some parameters.")
     parser.add_argument('user_message', nargs='*', help='User message to process')
     parser.add_argument('--assistant_name', help='Name of the assistant')
+    parser.add_argument('--assistant_id', help='Name of the assistant')
     args = parser.parse_args()
 
-    # コマンドライン引数または環境変数からassistant_nameを取得する
-    assistant_name = args.assistant_name or os.environ.get('ASSISTANT_NAME')
-    if not assistant_name:
-        print("Error: assistant_name is not specified via command line or environment variable.")
-        sys.exit(1)
+    assistant_id = args.assistant_id
 
-    assistant_id = get_or_create(assistant_name)
+    # assistant_idが指定されていない場合は、assistant_nameを使用してアシスタントを取得または作成する
+    if not assistant_id:
+        # コマンドライン引数または環境変数からassistant_nameを取得する
+        assistant_name = args.assistant_name or os.environ.get('ASSISTANT_NAME')
+        if not assistant_name:
+            print("Error: assistant_name is not specified via command line or environment variable.")
+            sys.exit(1)
+
+        assistant_id = get_or_create(assistant_name)
 
     user_message = " ".join(args.user_message)
 

@@ -79,6 +79,12 @@ To use this script, you need to do the following steps:
 ### Examples
 
 ```
+python assistant.py "get_folder_structure" --assistant_id="asst_sample"
+```
+
+or
+
+```
 python assistant.py "get_folder_structure" --assistant_name="Refactoring Developer"
 ```
 
