@@ -3,8 +3,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 This script provides abstract Assistant API wapper with various utility functions.
+For example, it can be used to get the folder structure of the local environment, check the content of files, and refactor them into the appropriate form.
 
 このスクリプトは、さまざまなユーティリティ関数を備えた抽象的な Assistant API ラッパーを提供します。
+例えば、生成AIがローカル環境のフォルダ構造を取得し、ファイルの内容を確認、適切な形へリファクタリングする用途があります。
 
 ## Description
 
