@@ -1,5 +1,7 @@
 # Assistant.py
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 This script provides abstract Assistant API wapper with various utility functions.
 
 このスクリプトは、さまざまなユーティリティ関数を備えた抽象的な Assistant API ラッパーを提供します。
